@@ -1,6 +1,6 @@
 from __future__ import division, absolute_import, print_function
 
-from .info import __doc__
+from .info import __doc__ # The dot in .info is relative import.  http://stackoverflow.com/questions/12738889/when-or-why-to-use-relative-imports-in-python
 from numpy.version import version as __version__
 
 # disables OpenBLAS affinity setting of the main thread that limits
